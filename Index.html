@@ -29,7 +29,8 @@
 }
 
 .contacttable {
-	font-family: font1;
+	font-family: font2;
+	font-size:20px;
 }
 
 .animate1{
@@ -64,6 +65,13 @@
 	100% { background-position: 100% 50%; }
 }
 
+h2{
+	font-family:font1
+}
+cite{
+	font-family:font2
+}
+
 </style>
 
     <body class="animate2">
@@ -94,7 +102,7 @@
 				
 
 				<li style="background-color:yellow;color:red;">
-				<marquee><b>Annoucement :</b> THIS WEBSITE IS UNDER CONSTRUCTION!!</marquee>
+				<marquee style="font-family:font2"><b>Annoucement :</b> THIS WEBSITE IS UNDER CONSTRUCTION!!  Also Note that to play video, you need web browsers that can support AV1(video codec) and opus(audio codec) IOS CANNOT PLAY VIDEO IS NOT FIXED YET!!</marquee>
 				</li>
 
 				<li style="background-image: linear-gradient(yellow, rgb(0, 0, 0));">‎</li>
@@ -166,7 +174,7 @@
 				<li style="background-image:url(bg07.gif);background-size: cover;">
 					
 					<h2>My Contact</h2>
-					<table class="contacttable" align="center">
+					<table class="contacttable" align="center" style="background-color: #c9a713;opacity:50%;">
 						<tr>
 							<th style="border:2px solid black;text-align:center;" width="75px"></th>
 							<th style="border:2px solid black;" width="300px"></th>
@@ -205,11 +213,109 @@
 				
 				
 				<li><h2>What I am doing in my free time</h2>
-				<img src="to01.jpg"/>
-				<img src="to02.jpg"/></li>
-				<li><h2>More Video</h2></li>
-				<li><h2>Another More Picture</h2></li>
-				<li><h2>My Favourite Music</h2></li>
+				<img src="to01.jpg" width="560" height="360" style="margin-left:80px;"/>
+				<img src="to02.jpg" width="560" height="360" style="float:right;margin-right:80px;"/>
+				</li>
+
+
+				<li><h2>More Video</h2>
+					<video src="sample1.mp4" width="600" height="400" controls autoplay style="margin-left:80px;">
+						<marquee 
+						direction="down"
+ 						width="640"
+  						height="360"
+ 						behavior="alternate"
+  						style="border:solid">
+  							<marquee behavior="alternate">NOT SUPPORTED AV1</marquee>
+						</marquee>
+					</video>
+					<video src="sample2.mp4" width="600" height="400" controls autoplay style="float:right;margin-right:80px;">
+						<marquee 
+						direction="down"
+ 						width="640"
+  						height="360"
+ 						behavior="alternate"
+  						style="border:solid">
+  							<marquee behavior="alternate">NOT SUPPORTED AV1</marquee>
+						</marquee>
+					</video>
+					<video src="sample3.mp4" width="600" height="400" controls autoplay style="margin-left:80px;">
+						<marquee 
+						direction="down"
+ 						width="640"
+  						height="360"
+ 						behavior="alternate"
+  						style="border:solid">
+  							<marquee behavior="alternate">NOT SUPPORTED AV1</marquee>
+						</marquee>
+					</video>
+
+				<li><h2>Another More Picture</h2>
+				<img src="fav03.jpg" height="600px" width="400px" style="margin-left:80px;">
+				<img src="fav02.jpg" height="400px" width="600px" style="float:right;margin-right:80px;">
+				</li>
+
+				<li>
+					<h2>My Favourite Music</h2>
+
+					<h3>เพลง 90's</h3>
+				
+					<div><!-- Song1 -->
+					<audio controls>
+						<source src="fav01.opus">
+						Your Browser Doesn't support opus audio!
+					</audio>
+					<br><cite>รักปอนปอน - ไมโคร</cite>
+					</div>
+					
+					<div><!-- Song2 -->
+					<audio controls>
+						<source src="fav02.opus">
+						Your Browser Doesn't support opus audio!
+					</audio>
+					<br><cite>ทุกข์ไม่เว้นวันราชการ - อัสนี วสันต์ โชติกุล</cite>
+					</div>
+					
+					<h3>เพลง 2000's</h3>
+					
+					<div><!-- Song3 -->
+					<audio controls>
+						<source src="fav03.opus">
+						Your Browser Doesn't support opus audio!
+					</audio>
+					<br><cite>ฤดูร้อน - Paradox</cite>
+					</div>
+					
+					<div><!-- Song4 -->
+					<audio controls>
+						<source src="fav04.opus">
+						Your Browser Doesn't support opus audio!
+					</audio>
+					<br><cite>L.O.V.E - 3 ซุปเปอร์แก็งค์</cite>
+					</div>
+
+					<h3>เพลง 2010's</h3>
+					
+					<div><!-- Song5 -->
+						<audio controls>
+							<source src="fav06.opus">
+							Your Browser Doesn't support opus audio!
+						</audio>
+						<br><cite>ยินดีที่ไม่รู้จัก - 25Hours</cite>
+						</div>
+
+					<h3>Classical Music</h3>
+
+						<div><!-- Song6 -->
+							<audio controls>
+								<source src="fav05.opus">
+								Your Browser Doesn't support opus audio!
+							</audio>
+							<br><cite>Waltz of the flowers played by <a href="https://youtu.be/yskdxuCVHIw?si=WHCOEJOYN2iTokX3">Aeolien Pipe Organ</a></cite>
+							</div>
+
+				
+				</li>
 
 
 			</ul>
