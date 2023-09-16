@@ -46,7 +46,9 @@
 .contacttable {
 	font-family: font2;
 	font-size:20px;
-	animation: floatwater 0.9s linear infinite;
+	text-shadow:0 0 20px black;
+	color: rgb(124, 255, 255);
+	animation: floatwater 1.2s linear infinite;
 	animation-direction: alternate;
 }
 
@@ -55,29 +57,35 @@
 	background-size: 200%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	animation: stylebg 4s linear infinite;
+	animation: stylewel 4s linear infinite;
+
 }
 
 .animate2{
 	background: linear-gradient(-90deg, #61d8c5, #755edf, #3ce36e, #e1572d,#61d8c5);
-	background-size:200%;
-
-	animation: stylebgbg 10s linear infinite;
+	background-size:300%;
+	animation: stylebg 10s linear infinite;
+	
 }
 
-.animate3::view-transition{
-	background: linear-gradient(-90deg, #000000, #ffffff, #3ce36e);
+.animate3{
+	background-image: url(bg09.gif);
 	background-size:200%;
 	font-style:font4;
-	animation: stylebg 10s linear infinite;
+	animation: stylebg2 10s linear infinite;
 }
 
   @keyframes stylebg {
-	0% { background-position: -100% 50%; };
-	100% { background-position: 100% 50%; };
+	0% { background-position: -150% 0%; };
+	100% { background-position: 150% 0%; };
 }
 
-  @keyframes stylebgbg {
+@keyframes stylewel {
+	0% { background-position: -200% 0%; };
+	100% { background-position: 200% 0%; };
+}
+
+  @keyframes stylebg2 {
 	0% { background-position: -100% 50%; };
 	100% { background-position: 100% 50%; };
 }
@@ -110,8 +118,7 @@ cite{
 			margin: 0;
 			padding: 0;
 			overflow: hidden;
-			background-color: #77a600 ; ">
-			
+			background-color: #77a600 ;">
 				<li class="tabmenu" style="float:right;margin-right:20px;margin-top:18px;transition: 0.3s;opacity:100% !important;">
 				<img src="tab01.png" width="50px" height="50px"/>
 				</li>
@@ -178,17 +185,18 @@ cite{
 				background-size: cover;">
 
 				<div>
-					<h1 style="
+					<h1 class="animate2" style="
 					float:left;
-					margin-left:30px;
+					margin-left:60px;
 					background-color:  rgb(191, 191, 206);
-					font-family:font2;">
+					font-family:font1;
+					border-radius:10%;">
 					My Introduction Video
 					</h1>
 				</div>
 				<br><br>
 				<div align="center">
-	 				<video style="margin-top:100px;margin-right:300px;box-shadow: 20px 20px;border-style:dashed;border-color:white;border-radius: 20px;" src="intro100.mp4" width="800" height="450" controls playsinline>
+	 				<video style="margin-top:100px;margin-right:310px;box-shadow: 20px 20px;border-style:dashed;border-color:white;border-radius: 20px;" src="intro100.mp4" width="800" height="450" controls playsinline>
 						<marquee 
 						direction="down"
  						width="640"
@@ -201,18 +209,31 @@ cite{
 				<br><br><br><br>
 				</li>
 
-				<li style="background-image: linear-gradient( rgb(15, 64, 79),rgb(167, 206, 235));height:20px">‎</li>
+				<li style="background-image: linear-gradient( rgb(15, 64, 79),rgb(0, 0, 0));height:20px">‎</li>
 
 
 				<li style="background-image:url(bg07.gif);background-size: cover;">
 					
-					<h2>My Contact</h2>
-					<table class="contacttable" align="center" style="background-color: #c9a713;opacity:100%;">
+					<h2 style="
+					float:left;
+					margin-left:100px;
+					margin-top:100px;
+					padding:20px;
+					background-image:url(bg08.png);
+					background-size: cover;
+					color:white;
+					font-size:50px;
+					font-family:font1;
+					text-shadow:0 0 10px black;
+					animation: floatwater 0.9s linear infinite;
+					animation-direction: alternate;">
+					My Contact</h2>
+					<table class="contacttable" align="center" style="background-image:url(bg08.png);background-size: cover;opacity:100%;">
 						<tr>
-							<th style="border:2px solid black;text-align:center;" width="75px"></th>
-							<th style="border:2px solid black;" width="300px"></th>
-							<th style="border:2px solid black;text-align:center;" width="75px"></th>
-							<th style="border:2px solid black;" width="300px"></th>
+							<th style="border:0px solid black;text-align:center;" width="75px"></th>
+							<th style="border:0px solid black;" width="300px"></th>
+							<th style="border:0px solid black;text-align:center;" width="75px"></th>
+							<th style="border:0px solid black;" width="300px"></th>
 						</tr>
 						<tr style="vertical-align: middle;" height="80px">
 							<td style="text-align:center;"><a href="https://www.instagram.com/pechon_sk42/"><img src="logo01.svg" width="48px" height="48px"/></a></td>
@@ -241,18 +262,26 @@ cite{
 					</table>
 				</li>
 			
-				
+				<li style="background-image: linear-gradient( rgb(26, 26, 26),rgb(0, 0, 0));height:20px">‎</li>
 				
 				
 
-				<li class="animate3"><h2 style="font-family:font5;">What I am doing in my free time</h2>
-				<img src="to01.jpg" width="560" height="360" style="margin-left:80px;"/>
-				<img src="to02.jpg" width="560" height="360" style="float:right;margin-right:80px;"/>
+				<li class="animate3">
+					<h2 style="font-family:font4;margin-top:20px;margin-left:50px;float:left;font-size:30px;color:white;">What I am doing in my free time?</h2>
+				 	<br><br><br><br><br><br>
+					<img src="to01.jpg" width="560" height="360" style="margin-left:80px;"/>
+					<img src="to02.jpg" width="560" height="360" style="float:right;margin-right:80px;"/>
+					<br><br><br><br>
 				</li>
 
 
-				<li><h2>More Video</h2>
-					<video src="sample1.mp4" width="600" height="400" controls style="margin-left:80px;">
+				<li style="background-image:url(bg10.gif);background-color: #cfe87f;background-size: cover;">
+					<h2 style="float:left;margin-left:50px;margin-top:20px;font-size:35px;color:antiquewhite;text-shadow: 0px 0px 25px #000000;">More Video ...</h2>
+					<br><br><br><br><br><br>
+					
+
+					<div style="float:right;margin-right:80px;border:1px solid red;">
+					<video src="sample2.mp4" width="600" height="400" controls >
 						<marquee 
 						direction="down"
  						width="640"
@@ -262,7 +291,13 @@ cite{
   							<marquee behavior="alternate">NOT SUPPORTED AV1</marquee>
 						</marquee>
 					</video>
-					<video src="sample2.mp4" width="600" height="400" controls style="float:right;margin-right:80px;">
+					<br>
+				<cite>พรหมลิคริสต์ งานแต่งเพลงศาสนาตอน ม.6 ช่วยแปลง 30p to 60p</cite>
+				
+				</div>
+
+				<div style="margin-left:80px;border:1px solid red;width:600px;">
+					<video src="sample1.mp4" width="600" height="400" controls>
 						<marquee 
 						direction="down"
  						width="640"
@@ -272,7 +307,12 @@ cite{
   							<marquee behavior="alternate">NOT SUPPORTED AV1</marquee>
 						</marquee>
 					</video>
-					<video src="sample3.mp4" width="600" height="400" controls style="margin-left:80px;">
+					<br>
+					<cite>Call Center อลเวง ละครสั้นตอน ม.6 ตัวแสดง+ตัดต่อ</cite>
+					</div>
+					
+					<div style="margin-left:80px;border:1px solid red;width:600px;">
+					<video src="sample3.mp4" width="600" height="400" controls>
 						<marquee 
 						direction="down"
  						width="640"
@@ -282,72 +322,16 @@ cite{
   							<marquee behavior="alternate">NOT SUPPORTED AV1</marquee>
 						</marquee>
 					</video>
+					<br>
+					<cite>Pasadena played by <a href="https://www.yourclassical.org/story/2017/03/14/introducing-the-hupfeld-phonolisztviolina">Hupfeld Phonoliszt Violina</a></cite><!-- vid4 -->
+					<cite>Retrived from https://youtu.be/rEECgZ5b8IY?si=Y3rzJoATJ4nA_sO0</cite>
+					</div>
+				<br><br><br><br><br>
+				</li>
 
 				<li><h2>Another More Picture</h2>
 				<img src="fav03.jpg" height="600px" width="400px" style="margin-left:80px;">
 				<img src="fav02.jpg" height="400px" width="600px" style="float:right;margin-right:80px;">
-				</li>
-
-				<li>
-					<h2>My Favourite Music</h2>
-
-					<h3>เพลง 90's</h3>
-				
-					<div><!-- Song1 -->
-					<audio controls>
-						<source src="fav01.opus">
-						Your Browser Doesn't support opus audio!
-					</audio>
-					<br><cite>รักปอนปอน - ไมโคร</cite>
-					</div>
-					
-					<div><!-- Song2 -->
-					<audio controls>
-						<source src="fav02.opus">
-						Your Browser Doesn't support opus audio!
-					</audio>
-					<br><cite>ทุกข์ไม่เว้นวันราชการ - อัสนี วสันต์ โชติกุล</cite>
-					</div>
-					
-					<h3>เพลง 2000's</h3>
-					
-					<div><!-- Song3 -->
-					<audio controls>
-						<source src="fav03.opus">
-						Your Browser Doesn't support opus audio!
-					</audio>
-					<br><cite>ฤดูร้อน - Paradox</cite>
-					</div>
-					
-					<div><!-- Song4 -->
-					<audio controls>
-						<source src="fav04.opus">
-						Your Browser Doesn't support opus audio!
-					</audio>
-					<br><cite>L.O.V.E - 3 ซุปเปอร์แก็งค์</cite>
-					</div>
-
-					<h3>เพลง 2010's</h3>
-					
-					<div><!-- Song5 -->
-						<audio controls>
-							<source src="fav06.opus">
-							Your Browser Doesn't support opus audio!
-						</audio>
-						<br><cite>ยินดีที่ไม่รู้จัก - 25Hours</cite>
-						</div>
-
-					<h3>Classical Music</h3>
-
-						<div><!-- Song6 -->
-							<audio controls>
-								<source src="fav05.opus">
-								Your Browser Doesn't support opus audio!
-							</audio>
-							<br><cite>Waltz of the flowers played by <a href="https://youtu.be/yskdxuCVHIw?si=WHCOEJOYN2iTokX3">Aeolien Pipe Organ</a></cite>
-							</div>
-
-				
 				</li>
 
 
