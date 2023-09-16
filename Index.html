@@ -19,6 +19,21 @@
   font-family: font2;
   src: url(BaiJamjuree-Light.ttf);
 }
+
+@font-face {
+  font-family: font3;
+  src: url(KhonsongRoundedDEMO-Medium.otf);
+}
+@font-face {
+  font-family: font4;
+  src: url(MNLotchongBold.ttf);
+}
+@font-face {
+  font-family: font5;
+  src: url(MNPlaKao.ttf);
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -31,6 +46,8 @@
 .contacttable {
 	font-family: font2;
 	font-size:20px;
+	animation: floatwater 0.9s linear infinite;
+	animation-direction: alternate;
 }
 
 .animate1{
@@ -48,22 +65,34 @@
 	animation: stylebgbg 10s linear infinite;
 }
 
-.animate3{
+.animate3::view-transition{
 	background: linear-gradient(-90deg, #000000, #ffffff, #3ce36e);
 	background-size:200%;
-
+	font-style:font4;
 	animation: stylebg 10s linear infinite;
 }
 
   @keyframes stylebg {
-	0% { background-position: -100% 50%; }
-	100% { background-position: 100% 50%; }
+	0% { background-position: -100% 50%; };
+	100% { background-position: 100% 50%; };
 }
 
   @keyframes stylebgbg {
-	0% { background-position: -100% 50%; }
-	100% { background-position: 100% 50%; }
+	0% { background-position: -100% 50%; };
+	100% { background-position: 100% 50%; };
 }
+
+  @keyframes floatwater{
+	0% {
+		
+		transform: rotatex(-40deg);
+}
+	100% {
+		transform: rotatex(-30deg);
+		
+	}
+
+	}
 
 h2{
 	font-family:font1
@@ -102,7 +131,7 @@ cite{
 				
 
 				<li style="background-color:yellow;color:red;">
-				<marquee style="font-family:font2"><b>Annoucement :</b> THIS WEBSITE IS UNDER CONSTRUCTION!!  Also Note that to play video, you need web browsers that can support AV1(video codec) and opus(audio codec) IOS CANNOT PLAY VIDEO IS NOT FIXED YET!!</marquee>
+				<marquee style="font-family:font2"><b>Annoucement :</b> THIS WEBSITE IS UNDER CONSTRUCTION!!  Also Note that to play video, you need web browsers that can support AV1(video codec) and opus(audio codec). Also This beta V1.08 build have many bugs such as IOS CANNOT PLAY VIDEO ,resizing problems ,and many imcompatibility of the browsers.</marquee>
 				</li>
 
 				<li style="background-image: linear-gradient(yellow, rgb(0, 0, 0));">‎</li>
@@ -151,13 +180,15 @@ cite{
 				<div>
 					<h1 style="
 					float:left;
-					background-color:  rgb(191, 191, 206);">
+					margin-left:30px;
+					background-color:  rgb(191, 191, 206);
+					font-family:font2;">
 					My Introduction Video
 					</h1>
 				</div>
 				<br><br>
 				<div align="center">
-	 				<video style="margin-top:100px;margin-right:300px;box-shadow: 20px 20px;border-style:dashed;border-color:white;border-radius: 20px;" src="intro100.mp4" width="800" height="450" controls>
+	 				<video style="margin-top:100px;margin-right:300px;box-shadow: 20px 20px;border-style:dashed;border-color:white;border-radius: 20px;" src="intro100.mp4" width="800" height="450" controls playsinline>
 						<marquee 
 						direction="down"
  						width="640"
@@ -170,11 +201,13 @@ cite{
 				<br><br><br><br>
 				</li>
 
+				<li style="background-image: linear-gradient( rgb(15, 64, 79),rgb(167, 206, 235));height:20px">‎</li>
+
 
 				<li style="background-image:url(bg07.gif);background-size: cover;">
 					
 					<h2>My Contact</h2>
-					<table class="contacttable" align="center" style="background-color: #c9a713;opacity:50%;">
+					<table class="contacttable" align="center" style="background-color: #c9a713;opacity:100%;">
 						<tr>
 							<th style="border:2px solid black;text-align:center;" width="75px"></th>
 							<th style="border:2px solid black;" width="300px"></th>
@@ -211,8 +244,8 @@ cite{
 				
 				
 				
-				
-				<li><h2>What I am doing in my free time</h2>
+
+				<li class="animate3"><h2 style="font-family:font5;">What I am doing in my free time</h2>
 				<img src="to01.jpg" width="560" height="360" style="margin-left:80px;"/>
 				<img src="to02.jpg" width="560" height="360" style="float:right;margin-right:80px;"/>
 				</li>
