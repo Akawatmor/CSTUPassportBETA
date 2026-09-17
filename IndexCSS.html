@@ -6,118 +6,65 @@
 	<meta name="viewport" content="width=device-width">
     <title>CSTU Passport By Akawat</title>
     <link rel="icon" href="favicon.gif" type="image/gif" >
+	<link rel="stylesheet" href="Style.css">
 
 </head>
 
 <style>
-
-@font-face {
-  font-family: font1;
-  src: url(./Fonts/BaiJamjuree-Medium.ttf);
-}
-@font-face {
-  font-family: font2;
-  src: url(./Fonts/BaiJamjuree-Light.ttf);
-}
-
-@font-face {
-  font-family: font3;
-  src: url(./Fonts/KhonsongRoundedDEMO-Medium.otf);
-}
-@font-face {
-  font-family: font4;
-  src: url(./Fonts/MNLotchongBold.ttf);
-}
-@font-face {
-  font-family: font5;
-  src: url(./Fonts/MNPlaKao.ttf);
-}
-
-
-* {
-  box-sizing: border-box;
-}
-
-.tabmenu:hover {
-	background-color: white;
-	opacity: 10%;
-}
-
-.contacttable {
-	font-family: font2;
-	font-size:20px;
-	text-shadow:0 0 20px black;
-	color: rgb(124, 255, 255);
-	animation: floatwater 1.2s linear infinite;
-	animation-direction: alternate;
-}
-
-.animate1{
-	background: linear-gradient(-45deg, #61d8c5, #755edf, #3ce36e, #e1572d,#61d8c5);
-	background-size: 200%;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: stylewel 4s linear infinite;
-
-}
-
-.animate2{
-	background: linear-gradient(-90deg, #61d8c5, #755edf, #3ce36e, #e1572d,#61d8c5);
-	background-size:300%;
-	animation: stylebg 10s linear infinite;
-	
-}
-
-.animate3{
-	background-image: url(./Backgrounds/bg09.gif);
-	background-size:200%;
-	font-style:font4;
-	animation: stylebg2 10s linear infinite;
-}
-
-  @keyframes stylebg {
-	0% { background-position: -150% 0%; };
-	100% { background-position: 150% 0%; };
-}
-
-@keyframes stylewel {
-	0% { background-position: -200% 0%; };
-	100% { background-position: 200% 0%; };
-}
-
-  @keyframes stylebg2 {
-	0% { background-position: -100% 50%; };
-	100% { background-position: 100% 50%; };
-}
-
-  @keyframes floatwater{
-	0% {
-		
-		transform: rotatex(-40deg);
-}
-	100% {
-		transform: rotatex(-30deg);
-		
+#table1{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #77a600 ;
 	}
-
-   }
-
-h2{
-	font-family:font1
+	
+#head1{
+display: block;
+color: white;
+text-align: left;
+padding-left: 100px;
+text-decoration: none;
+font-family:font1
 }
-cite{
-	font-family:font2
+
+#welcomeinfo{
+margin-top :50px;
+margin-right : 250px;
+height:80px;
+/* border: 1px solid red;*/ /*enable For Debug border*/
+font-size:50px;
+font-family:font1 !important;
 }
 
+.videointro{
+margin-top:100px;
+margin-right:310px;
+box-shadow: 20px 20px;
+border-style:dashed;
+border-color:white;
+border-radius: 20px;
+}
+
+.Mycontactanimate{
+float:left;
+margin-left:100px;
+margin-top:100px;
+padding:20px;
+background-image:url(./Backgrounds/bg08.png);
+background-size: cover;
+color:white;
+font-size:50px;
+font-family:font1;
+text-shadow:0 0 10px black;
+animation: floatwater 0.9s linear infinite;
+animation-direction: alternate;
+}
 </style>
 
 <body class="animate2"> <!--Make Blank White border to animated color gradient-->
 
-	<ul style="list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #77a600 ;">
+	<ul id = table1>
 
 		<li class="tabmenu" style="float:right;margin-right:20px;margin-top:18px;transition: 0.3s;opacity:100% !important;">
 			<img src="LOGO/tab01.png" width="50px" height="50px"/>
@@ -128,12 +75,7 @@ cite{
 		</li>
 
 		<li>
-			<h1 style="display: block;
-			color: white;
-			text-align: left;
-			padding-left: 100px;
-			text-decoration: none;
-			font-family:font1">
+			<h1 class="head1">
 			CSTU Passport by Akawat</h1>
 		</li>
 				
@@ -152,13 +94,7 @@ cite{
 
 		<li style="background-image: url(./Backgrounds/bg04.gif);">
 			<div style="float:right;color:aqua;font-family:font2;">
-				<h1 class="animate1" style="
-	  			margin-top :50px;
-	  			margin-right : 250px;
-	  			height:80px;
-	  			/* border: 1px solid red;*/ /*enable For Debug border*/
-				font-size:50px;
-				font-family:font1 !important;">
+				<h1 class="animate1" id="welcomeinfo">
 					ขอต้อนรับเข้าสู่เว็บไซต์ของผม
 				</h1>
 
@@ -216,12 +152,8 @@ cite{
 			<br>
 
 			<div align="center">
-	 			<video style="margin-top:100px;
-				margin-right:310px;
-				box-shadow: 20px 20px;
-				border-style:dashed;
-				border-color:white;
-				border-radius: 20px;"
+	 			<video
+				class="introvideo"
 				src="intro100.mp4"
 				width="800"
 				height="450"
@@ -255,19 +187,7 @@ cite{
 		background-image:url(./Backgrounds/bg07.gif);
 		background-size: cover;">
 					
-			<h2 style="
-			float:left;
-			margin-left:100px;
-			margin-top:100px;
-			padding:20px;
-			background-image:url(./Backgrounds/bg08.png);
-			background-size: cover;
-			color:white;
-			font-size:50px;
-			font-family:font1;
-			text-shadow:0 0 10px black;
-			animation: floatwater 0.9s linear infinite;
-			animation-direction: alternate;">
+			<h2 class="Mycontactanimate">
 				My Contact
 			</h2>
 
@@ -310,7 +230,8 @@ cite{
 		background-image: linear-gradient( rgb(26, 26, 26),rgb(219, 218, 255));
 		height:20px">
 			‎
-		</li>
+		</li><!--Transition background-->
+
 				
 		<li style="
 		background-image:url(./Backgrounds/bg11.gif);
@@ -425,7 +346,8 @@ cite{
 		<li style="
 		background-image: linear-gradient( rgb(219, 218, 255),rgb(0, 0, 0));
 		height:20px">‎
-		</li>
+		</li><!--Transition background-->
+
 
 		<li class="animate3">
 			<h2 style="font-family:font4;margin-top:20px;margin-left:50px;float:left;font-size:30px;color:white;">
@@ -547,7 +469,8 @@ cite{
 		background-image: linear-gradient( rgb(0, 0, 0),rgb(50, 58, 58));
 		height:20px">
 			‎
-		</li>
+		</li><!--Transition background-->
+
 
 		<li style="
 		background-image: url(./Backgrounds/bg14.gif);
@@ -606,7 +529,8 @@ cite{
 		background-image: linear-gradient( rgb(50, 58, 58),rgb(22, 49, 155));
 		height:20px">
 			‎
-		</li>
+		</li><!--Transition background-->
+
 
 		<li style="background-image: url(./Backgrounds/bg12.gif);background-size: cover;">
 			<br>
@@ -637,31 +561,31 @@ cite{
 				<tr style="font-family: font2; font-size:20px;">
 					<td style="width:20%;border:2px solid yellow;"><audio src="Audio/fav09.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
 					<td style="width:30%;border:2px solid yellow;"><p>หลอกกันเล่นเลย - นูโว (AAC)</p></td>
-					<td style="width:20%;border:2px solid rgb(25, 0, 255);"><audio src="Audio/fav14.m4a"" controls playsinline>Not Support Opus on your Browsers!</audio></td>
+					<td style="width:20%;border:2px solid rgb(25, 0, 255);"><audio src="Audio/fav14.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
 					<td style="width:30%;border:2px solid rgb(25, 0, 255);"><p>ปลิว - พลอยชมพู (AAC)</p></td>
 				</tr>
 				<tr style="font-family: font2; font-size:20px;">
 					<td style="width:20%;border:2px solid yellow;"><audio src="Audio/fav08.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
 					<td style="width:30%;border:2px solid yellow;"><p>รอยร้าว - อิทธิ พลางกูล (AAC)</p></td>
-					<td style="width:20%;border:2px solid rgb(25, 0, 255);"><audio src="Audio/fav15.m4a"" controls playsinline>Not Support Opus on your Browsers!</audio></td>
+					<td style="width:20%;border:2px solid rgb(25, 0, 255);"><audio src="Audio/fav15.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
 					<td style="width:30%;border:2px solid rgb(25, 0, 255);"><p>เรื่องที่ขอ - ลูลา (AAC)</p></td>
 				</tr>
 				<tr style="font-family: font2; font-size:20px;">
 					<td style="width:20%;border:2px solid yellow;"><audio src="Audio/fav10.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
 					<td style="width:30%;border:2px solid yellow;"><p>ได้อย่างเสียอย่าง - อัสนี วสันต์ (AAC)</p></td>
-					<td style="width:20%;border:2px solid rgb(25, 0, 255);"><audio src="Audio/fav16.m4a"" controls playsinline>Not Support Opus on your Browsers!</audio></td>
+					<td style="width:20%;border:2px solid rgb(25, 0, 255);"><audio src="Audio/fav16.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
 					<td style="width:30%;border:2px solid rgb(25, 0, 255);"><p>ลูกอม - วัชราวลี (AAC)</p></td>
 				</tr>
 				<tr style="font-family: font2; font-size:20px;">
 					<td style="width:20%;border:2px solid yellow;"><audio src="Audio/fav11.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
 					<td style="width:30%;border:2px solid yellow;"><p>กองไว้ - เจตริน วรรธนะสิน (AAC)</p></td>
-					<td style="width:20%;border:2px solid rgb(25, 0, 255);"><audio src="Audio/fav17.m4a"" controls playsinline>Not Support Opus on your Browsers!</audio></td>
+					<td style="width:20%;border:2px solid rgb(25, 0, 255);"><audio src="Audio/fav17.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
 					<td style="width:30%;border:2px solid rgb(25, 0, 255);"><p>ซักวันฉันจะดีพอ - Bodyslam (AAC)</p></td>
 				</tr>
 				<tr style="font-family: font2; font-size:20px;">
 					<td style="width:20%;border:2px solid yellow;"><audio src="Audio/fav12.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
 					<td style="width:30%;border:2px solid yellow;"><p>อย่าดีกว่า - ไมโคร (AAC)</p></td>
-					<td style="width:20%;border:2px solid rgb(25, 0, 255);"><audio src="Audio/fav18.m4a"" controls playsinline>Not Support Opus on your Browsers!</audio></td>
+					<td style="width:20%;border:2px solid rgb(25, 0, 255);"><audio src="Audio/fav18.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
 					<td style="width:30%;border:2px solid rgb(25, 0, 255);"><p>เพ้อเจ้อ - Alarm9 (AAC)</p></td>
 				</tr>
 			</table>
